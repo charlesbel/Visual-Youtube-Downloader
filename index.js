@@ -63,14 +63,6 @@ app.post('/', async (req, res) => {
 
 })
 
-app.get('/download', (req, res) => {
-
-  const { link, filename } = req.query;
-
-  res.download(link, filename);
-
-})
-
 app.listen(port, () => {
   console.log(`Youtube Downloader started on port ${port}`)
 })
